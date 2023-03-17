@@ -17,11 +17,8 @@ class SingletonTS{
 }
 
 const singleton1 = SingletonTS.getInstance();
-console.log(singleton1.random);
-const singleton2 = SingletonTS.getInstance();
-console.log(singleton2.random);
+const newSingletom = SingletonTS.getInstance();
 singleton1.random = 7;
 console.log(singleton1.random);
-console.log(singleton2.random);
-
-console.log(singleton1 === singleton2);
+console.log(newSingletom.random);
+console.log(singleton1 === newSingletom);
